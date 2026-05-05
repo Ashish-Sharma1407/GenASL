@@ -1,0 +1,21 @@
+{
+  "$schema": "https://railway.app/railway.schema.json",
+  "build": {
+    "builder": "dockerfile",
+    "context": "."
+  },
+  "deploy": {
+    "numReplicas": 1,
+    "startCommand": "uvicorn app.main:app --host 0.0.0.0 --port $PORT",
+    "restartPolicyMaxRetries": 5,
+    "restartPolicyWindowSeconds": 60
+  },
+  "environmentVariables": {
+    "MINIO_ENDPOINT": "localhost:9000",
+    "OLLAMA_URL": "http://localhost:11434",
+    "OLLAMA_MODEL": "llama2",
+    "WHISPER_DEVICE": "cpu",
+    "WHISPER_MODEL_SIZE": "tiny",
+    "ASL_WORDS_DIR": "/app/demo_data/words"
+  }
+}

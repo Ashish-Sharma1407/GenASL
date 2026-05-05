@@ -1,0 +1,1837 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [7 0 R 9 0 R 11 0 R 13 0 R 15 0 R 17 0 R 19 0 R 21 0 R 23 0 R] /Count 9 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+6 0 obj
+<< /Length 3012 >>
+stream
+BT
+/F2 24 Tf
+56 784.00 Td
+(GenASL Project Revision Guide) Tj
+-56 -32.00 Td
+/F1 10 Tf
+56 752.00 Td
+() Tj
+-56 -8.00 Td
+/F2 14 Tf
+56 744.00 Td
+(1. Project Name) Tj
+-56 -19.00 Td
+/F1 10 Tf
+56 725.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 717.00 Td
+(The project is called GenASL.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 703.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 695.00 Td
+(GenASL is a Speech/Text to American Sign Language video generation system.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 681.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 673.00 Td
+(In simple words, the user speaks or types an English sentence, and the system creates an ASL) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 659.00 Td
+(video by joining together pre-recorded ASL sign clips.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 645.00 Td
+() Tj
+-56 -8.00 Td
+/F2 14 Tf
+56 637.00 Td
+(2. One-Line Explanation) Tj
+-56 -19.00 Td
+/F1 10 Tf
+56 618.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 610.00 Td
+(GenASL converts English speech or typed text into an American Sign Language video using) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 596.00 Td
+(ASLLVD dataset sign clips, an LLM for ASL gloss generation, and FFmpeg for video stitching.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 582.00 Td
+() Tj
+-56 -8.00 Td
+/F2 14 Tf
+56 574.00 Td
+(3. Main Idea) Tj
+-56 -19.00 Td
+/F1 10 Tf
+56 555.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 547.00 Td
+(The project does not create signs from nothing.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 533.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 525.00 Td
+(It uses existing ASL sign videos from a dataset. Each word or sign has a small video clip.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 511.00 Td
+(When a user enters a sentence, the backend finds the required clips and combines them into) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 497.00 Td
+(one final video.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 483.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 475.00 Td
+(Example:) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 461.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 453.00 Td
+(Input sentence:) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 439.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 431.00 Td
+(What is your name?) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 417.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 409.00 Td
+(Possible ASL gloss:) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 395.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 387.00 Td
+(YOUR NAME WHAT) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 373.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 365.00 Td
+(The backend searches for:) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 351.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 343.00 Td
+(YOUR.mp4) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 329.00 Td
+(NAME.mp4) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 315.00 Td
+(WHAT.mp4) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 301.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 293.00 Td
+(Then it joins these clips into one ASL translation video.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 279.00 Td
+() Tj
+-56 -8.00 Td
+/F2 14 Tf
+56 271.00 Td
+(4. Frontend) Tj
+-56 -19.00 Td
+/F1 10 Tf
+56 252.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 244.00 Td
+(Location:) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 230.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 222.00 Td
+(frontend/src/App.jsx) Tj
+-56 -14.00 Td
+/F1 8 Tf
+277.50 27.00 Td
+(Page 1) Tj
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 6 0 R >>
+endobj
+8 0 obj
+<< /Length 3172 >>
+stream
+BT
+/F1 10 Tf
+56 784.00 Td
+(frontend/src/components/LiveSTT.jsx) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 770.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 762.00 Td
+(The frontend is built using React, Vite, Tailwind CSS, and Lucide icons.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 748.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 740.00 Td
+(What the frontend does:) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 726.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 718.00 Td
+(- Shows a chat-like user interface.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 704.00 Td
+(- Lets the user type text.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 690.00 Td
+(- Lets the user use the microphone.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 676.00 Td
+(- Sends text to the backend API.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 662.00 Td
+(- Polls the backend until the generated video is ready.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 648.00 Td
+(- Displays the final ASL video.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 634.00 Td
+(- Displays the skeleton/pose video if available.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 620.00 Td
+(- Displays the ASL gloss tokens used for translation.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 606.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 598.00 Td
+(Important frontend behavior:) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 584.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 576.00 Td
+(- Text input is sent to POST /jobs/generate.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 562.00 Td
+(- The frontend receives a job_id.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 548.00 Td
+(- It repeatedly calls GET /jobs/{job_id}.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 534.00 Td
+(- When the job status becomes DONE, it shows the video result.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 520.00 Td
+() Tj
+-56 -8.00 Td
+/F2 14 Tf
+56 512.00 Td
+(5. Backend) Tj
+-56 -19.00 Td
+/F1 10 Tf
+56 493.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 485.00 Td
+(Location:) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 471.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 463.00 Td
+(backend/app/main.py) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 449.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 441.00 Td
+(The backend is built using FastAPI.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 427.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 419.00 Td
+(Main backend responsibilities:) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 405.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 397.00 Td
+(- Receive text or speech input.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 383.00 Td
+(- Convert speech to text using Whisper.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 369.00 Td
+(- Convert English text into ASL gloss tokens using an LLM through Ollama.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 355.00 Td
+(- Match gloss tokens with available ASLLVD video clips.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 341.00 Td
+(- Stitch matching video clips into one final video using FFmpeg.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 327.00 Td
+(- Generate skeleton video if pose/head data is available.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 313.00 Td
+(- Return video URLs to the frontend.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 299.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 291.00 Td
+(Important API endpoints:) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 277.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 269.00 Td
+(- POST /jobs/generate) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 255.00 Td
+(- GET /jobs/{job_id}) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 241.00 Td
+(- POST /jobs/generate-from-audio) Tj
+-56 -14.00 Td
+/F1 8 Tf
+277.50 27.00 Td
+(Page 2) Tj
+ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 8 0 R >>
+endobj
+10 0 obj
+<< /Length 2939 >>
+stream
+BT
+/F1 10 Tf
+56 784.00 Td
+(- WebSocket /ws/transcribe) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 770.00 Td
+() Tj
+-56 -8.00 Td
+/F2 14 Tf
+56 762.00 Td
+(6. Dataset Used) Tj
+-56 -19.00 Td
+/F1 10 Tf
+56 743.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 735.00 Td
+(Dataset name:) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 721.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 713.00 Td
+(ASLLVD - American Sign Language Lexicon Video Dataset) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 699.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 691.00 Td
+(Important dataset folders:) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 677.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 669.00 Td
+(asllvd_metadata/) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 655.00 Td
+(asllvd_raw/) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 641.00 Td
+(asl_videos/words/) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 627.00 Td
+(asl_videos/poses/) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 613.00 Td
+(asl_videos/heads/) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 599.00 Td
+(asl_videos/public/) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 585.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 577.00 Td
+(Important metadata file:) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 563.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 555.00 Td
+(asllvd_metadata/asllvd_signs_2024_06_27.csv) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 541.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 533.00 Td
+(The CSV file contains:) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 519.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 511.00 Td
+(- Sign/gloss name.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 497.00 Td
+(- Source video filename.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 483.00 Td
+(- Start frame of the sign.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 469.00 Td
+(- End frame of the sign.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 455.00 Td
+(- Handshape information.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 441.00 Td
+(- Sign type.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 427.00 Td
+(- Class label.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 413.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 405.00 Td
+(Simple explanation:) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 391.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 383.00 Td
+(The CSV tells the project where each sign is located inside a longer ASL video.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 369.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 361.00 Td
+(For example, if the sign BOOK appears from frame 1000 to 1050 in a raw video, the project) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 347.00 Td
+(cuts that section and saves it as BOOK.mp4.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 333.00 Td
+() Tj
+-56 -8.00 Td
+/F2 14 Tf
+56 325.00 Td
+(7. Dataset Preparation) Tj
+-56 -19.00 Td
+/F1 10 Tf
+56 306.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 298.00 Td
+(Raw ASLLVD videos are stored in:) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 284.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 276.00 Td
+(asllvd_raw/) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 262.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 254.00 Td
+(The script below reads the CSV and cuts individual sign clips:) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 240.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 232.00 Td
+(backend/asllvd_streaming_cutter.py) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 218.00 Td
+() Tj
+-56 -8.00 Td
+/F1 8 Tf
+277.50 27.00 Td
+(Page 3) Tj
+ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 10 0 R >>
+endobj
+12 0 obj
+<< /Length 3143 >>
+stream
+BT
+/F1 10 Tf
+56 784.00 Td
+(It uses FFmpeg to extract sign videos and saves them in:) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 770.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 762.00 Td
+(asl_videos/words/) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 748.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 740.00 Td
+(Another script handles special file names:) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 726.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 718.00 Td
+(backend/renaming_hash_clips.py) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 704.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 696.00 Td
+(The current project contains around 2623 ASL word clips in asl_videos/words/.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 682.00 Td
+() Tj
+-56 -8.00 Td
+/F2 14 Tf
+56 674.00 Td
+(8. Text to ASL Gloss) Tj
+-56 -19.00 Td
+/F1 10 Tf
+56 655.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 647.00 Td
+(Location:) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 633.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 625.00 Td
+(backend/app/llm_service.py) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 611.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 603.00 Td
+(This file sends the English sentence to an LLM running through Ollama.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 589.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 581.00 Td
+(The LLM converts English into ASL gloss-style tokens.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 567.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 559.00 Td
+(Example:) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 545.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 537.00 Td
+(English:) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 523.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 515.00 Td
+(What is your name?) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 501.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 493.00 Td
+(ASL gloss intent:) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 479.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 471.00 Td
+(["YOUR", "NAME", "WHAT"]) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 457.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 449.00 Td
+(Important point:) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 435.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 427.00 Td
+(The LLM does not create the video. It only gives the ASL word order or gloss tokens.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 413.00 Td
+() Tj
+-56 -8.00 Td
+/F2 14 Tf
+56 405.00 Td
+(9. Canonicalizer) Tj
+-56 -19.00 Td
+/F1 10 Tf
+56 386.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 378.00 Td
+(Location:) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 364.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 356.00 Td
+(backend/app/canonicalizer.py) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 342.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 334.00 Td
+(The canonicalizer checks whether the gloss tokens returned by the LLM actually exist in the) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 320.00 Td
+(dataset.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 306.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 298.00 Td
+(Example:) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 284.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 276.00 Td
+(If the LLM returns MOVIE, the canonicalizer checks if MOVIE.mp4 exists in asl_videos/words/.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 262.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 254.00 Td
+(If the exact word is not available, it may:) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 240.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 232.00 Td
+(- Try a close matching dataset word.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 218.00 Td
+(- Try a base word variant.) Tj
+-56 -14.00 Td
+/F1 8 Tf
+277.50 27.00 Td
+(Page 4) Tj
+ET
+endstream
+endobj
+13 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 12 0 R >>
+endobj
+14 0 obj
+<< /Length 3026 >>
+stream
+BT
+/F1 10 Tf
+56 784.00 Td
+(- Fingerspell the word using letter clips.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 770.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 762.00 Td
+(This step is important because the system can only render signs that exist in the dataset.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 748.00 Td
+() Tj
+-56 -8.00 Td
+/F2 14 Tf
+56 740.00 Td
+(10. Video Stitching) Tj
+-56 -19.00 Td
+/F1 10 Tf
+56 721.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 713.00 Td
+(Location:) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 699.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 691.00 Td
+(backend/app/stitching_service.py) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 677.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 669.00 Td
+(This part combines many small ASL clips into one final video.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 655.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 647.00 Td
+(It uses FFmpeg.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 633.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 625.00 Td
+(Example:) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 611.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 603.00 Td
+(YOUR.mp4 + pause + NAME.mp4 + pause + WHAT.mp4) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 589.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 581.00 Td
+(becomes:) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 567.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 559.00 Td
+(final_output.mp4) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 545.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 537.00 Td
+(The backend also inserts small pause tokens between signs to make the output easier to) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 523.00 Td
+(watch.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 509.00 Td
+() Tj
+-56 -8.00 Td
+/F2 14 Tf
+56 501.00 Td
+(11. Job System) Tj
+-56 -19.00 Td
+/F1 10 Tf
+56 482.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 474.00 Td
+(Location:) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 460.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 452.00 Td
+(backend/app/job_manager.py) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 438.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 430.00 Td
+(The system uses a simple in-memory job manager.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 416.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 408.00 Td
+(Flow:) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 394.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 386.00 Td
+(- A user submits text.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 372.00 Td
+(- Backend creates a job with a unique job_id.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 358.00 Td
+(- Job status starts as PENDING.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 344.00 Td
+(- Backend processes the job in the background.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 330.00 Td
+(- Status changes to RUNNING.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 316.00 Td
+(- When complete, status becomes DONE.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 302.00 Td
+(- If something fails, status becomes FAILED.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 288.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 280.00 Td
+(The frontend keeps checking the job status until the final video is ready.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 266.00 Td
+() Tj
+-56 -8.00 Td
+/F2 14 Tf
+56 258.00 Td
+(12. Speech Recognition) Tj
+-56 -19.00 Td
+/F1 10 Tf
+56 239.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 231.00 Td
+(Locations:) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 217.00 Td
+() Tj
+-56 -8.00 Td
+/F1 8 Tf
+277.50 27.00 Td
+(Page 5) Tj
+ET
+endstream
+endobj
+15 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 14 0 R >>
+endobj
+16 0 obj
+<< /Length 3012 >>
+stream
+BT
+/F1 10 Tf
+56 784.00 Td
+(backend/app/whisper_service.py) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 770.00 Td
+(backend/app/realtime_whisper_service.py) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 756.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 748.00 Td
+(Speech recognition is done using faster-whisper.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 734.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 726.00 Td
+(Flow:) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 712.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 704.00 Td
+(- Browser records microphone audio.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 690.00 Td
+(- Audio is sent to the backend.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 676.00 Td
+(- Whisper converts speech into English text.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 662.00 Td
+(- That text is sent into the same text-to-ASL pipeline.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 648.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 640.00 Td
+(So speech input and typed input eventually follow the same backend process.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 626.00 Td
+() Tj
+-56 -8.00 Td
+/F2 14 Tf
+56 618.00 Td
+(13. Pose and Skeleton Generation) Tj
+-56 -19.00 Td
+/F1 10 Tf
+56 599.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 591.00 Td
+(Important files:) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 577.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 569.00 Td
+(extract_pose.py) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 555.00 Td
+(extract_head.py) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 541.00 Td
+(extract_all_poses.py) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 527.00 Td
+(extract_all_head.py) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 513.00 Td
+(render_skeleton.py) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 499.00 Td
+(backend/app/pose_stitching_service.py) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 485.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 477.00 Td
+(The system also creates skeleton-style ASL videos.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 463.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 455.00 Td
+(How it works:) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 441.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 433.00 Td
+(- MediaPipe reads ASL video clips.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 419.00 Td
+(- It detects body, hand, and head landmarks.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 405.00 Td
+(- These landmarks are saved as NumPy .npy files.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 391.00 Td
+(- Pose data is stored in asl_videos/poses/.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 377.00 Td
+(- Head motion data is stored in asl_videos/heads/.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 363.00 Td
+(- render_skeleton.py draws a skeleton video from these arrays.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 349.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 341.00 Td
+(The frontend can show both:) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 327.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 319.00 Td
+(- Real ASL video.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 305.00 Td
+(- Skeleton/pose video.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 291.00 Td
+() Tj
+-56 -8.00 Td
+/F2 14 Tf
+56 283.00 Td
+(14. Storage and Video URLs) Tj
+-56 -19.00 Td
+/F1 10 Tf
+56 264.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 256.00 Td
+(Location:) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 242.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 234.00 Td
+(backend/app/minio_service.py) Tj
+-56 -14.00 Td
+/F1 8 Tf
+277.50 27.00 Td
+(Page 6) Tj
+ET
+endstream
+endobj
+17 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 16 0 R >>
+endobj
+18 0 obj
+<< /Length 2879 >>
+stream
+BT
+/F1 10 Tf
+56 784.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 776.00 Td
+(Generated videos can be uploaded to MinIO.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 762.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 754.00 Td
+(If MinIO is not configured, the project falls back to serving files locally from:) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 740.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 732.00 Td
+(asl_videos/public/) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 718.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 710.00 Td
+(This makes the generated videos accessible through URLs that the frontend can play.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 696.00 Td
+() Tj
+-56 -8.00 Td
+/F2 14 Tf
+56 688.00 Td
+(15. Complete System Flow) Tj
+-56 -19.00 Td
+/F1 10 Tf
+56 669.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 661.00 Td
+(Step-by-step flow:) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 647.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 639.00 Td
+(1. User types or speaks in the frontend.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 625.00 Td
+(2. If speech is used, Whisper converts speech to text.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 611.00 Td
+(3. Text is sent to the FastAPI backend.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 597.00 Td
+(4. LLM converts English text into ASL gloss tokens.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 583.00 Td
+(5. Canonicalizer maps those tokens to actual ASLLVD clip names.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 569.00 Td
+(6. Backend finds matching .mp4 files in asl_videos/words/.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 555.00 Td
+(7. FFmpeg stitches those clips into one video.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 541.00 Td
+(8. Pose/head data is stitched and rendered into a skeleton video if available.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 527.00 Td
+(9. Final video URLs are returned.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 513.00 Td
+(10. Frontend displays the generated ASL video.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 499.00 Td
+() Tj
+-56 -8.00 Td
+/F2 14 Tf
+56 491.00 Td
+(16. Important Technologies) Tj
+-56 -19.00 Td
+/F1 10 Tf
+56 472.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 464.00 Td
+(Frontend:) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 450.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 442.00 Td
+(- React) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 428.00 Td
+(- Vite) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 414.00 Td
+(- Tailwind CSS) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 400.00 Td
+(- Lucide icons) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 386.00 Td
+(- Browser microphone API) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 372.00 Td
+(- WebSocket) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 358.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 350.00 Td
+(Backend:) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 336.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 328.00 Td
+(- FastAPI) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 314.00 Td
+(- Python) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 300.00 Td
+(- faster-whisper) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 286.00 Td
+(- Ollama) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 272.00 Td
+(- llama3) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 258.00 Td
+(- spaCy) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 244.00 Td
+(- FFmpeg) Tj
+-56 -14.00 Td
+/F1 8 Tf
+277.50 27.00 Td
+(Page 7) Tj
+ET
+endstream
+endobj
+19 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 18 0 R >>
+endobj
+20 0 obj
+<< /Length 3616 >>
+stream
+BT
+/F1 10 Tf
+56 784.00 Td
+(- MediaPipe) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 770.00 Td
+(- OpenCV) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 756.00 Td
+(- NumPy) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 742.00 Td
+(- MinIO) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 728.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 720.00 Td
+(Dataset:) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 706.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 698.00 Td
+(- ASLLVD) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 684.00 Td
+() Tj
+-56 -8.00 Td
+/F2 14 Tf
+56 676.00 Td
+(17. What To Say In A Presentation) Tj
+-56 -19.00 Td
+/F1 10 Tf
+56 657.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 649.00 Td
+(You can explain the project like this:) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 635.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 627.00 Td
+(Our project is called GenASL. It converts English speech or typed text into American Sign) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 613.00 Td
+(Language video. The frontend is a React chat interface where users can type or speak. The) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 599.00 Td
+(backend is built using FastAPI. If the user speaks, Whisper first converts speech to text.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 585.00 Td
+(Then an LLM converts English into ASL gloss order. After that, the backend checks the ASLLVD) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 571.00 Td
+(dataset for matching sign clips. It stitches those clips together using FFmpeg and returns) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 557.00 Td
+(the final ASL video to the frontend. We also use MediaPipe to extract pose and head) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 543.00 Td
+(landmarks, so the system can generate a skeleton visualization of the signs.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 529.00 Td
+() Tj
+-56 -8.00 Td
+/F2 14 Tf
+56 521.00 Td
+(18. Honest Limitation) Tj
+-56 -19.00 Td
+/F1 10 Tf
+56 502.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 494.00 Td
+(This is an MVP.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 480.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 472.00 Td
+(It does not generate completely new sign language animations from scratch.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 458.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 450.00 Td
+(It works by stitching existing signs from the ASLLVD dataset.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 436.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 428.00 Td
+(If a word is not present in the dataset, the system may skip it, map it to a close word, or) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 414.00 Td
+(fingerspell it using letter signs.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 400.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 392.00 Td
+(Best way to describe it:) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 378.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 370.00 Td
+(GenASL is a dataset-based ASL video generation system, not a fully neural sign-language) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 356.00 Td
+(avatar.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 342.00 Td
+() Tj
+-56 -8.00 Td
+/F2 14 Tf
+56 334.00 Td
+(19. Simple Viva Questions) Tj
+-56 -19.00 Td
+/F1 10 Tf
+56 315.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 307.00 Td
+(Question: What problem does this project solve?) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 293.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 285.00 Td
+(Answer: It helps convert English speech or text into an ASL video, making communication more) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 271.00 Td
+(accessible.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 257.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 249.00 Td
+(Question: Which dataset is used?) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 235.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 227.00 Td
+(Answer: ASLLVD, the American Sign Language Lexicon Video Dataset.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 213.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 205.00 Td
+(Question: What is ASL gloss?) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 191.00 Td
+() Tj
+-56 -8.00 Td
+/F1 8 Tf
+277.50 27.00 Td
+(Page 8) Tj
+ET
+endstream
+endobj
+21 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 20 0 R >>
+endobj
+22 0 obj
+<< /Length 2962 >>
+stream
+BT
+/F1 10 Tf
+56 784.00 Td
+(Answer: ASL gloss is a written representation of ASL signs, usually using uppercase words in) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 770.00 Td
+(ASL grammar order.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 756.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 748.00 Td
+(Question: Does the LLM generate the video?) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 734.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 726.00 Td
+(Answer: No. The LLM only converts English into ASL gloss tokens. The videos come from the) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 712.00 Td
+(ASLLVD dataset.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 698.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 690.00 Td
+(Question: Why is FFmpeg used?) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 676.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 668.00 Td
+(Answer: FFmpeg is used to cut and stitch video clips.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 654.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 646.00 Td
+(Question: Why is MediaPipe used?) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 632.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 624.00 Td
+(Answer: MediaPipe is used to extract body, hand, and face/head landmarks for skeleton) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 610.00 Td
+(visualization.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 596.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 588.00 Td
+(Question: What is the role of the frontend?) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 574.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 566.00 Td
+(Answer: The frontend takes user input, sends it to the backend, and displays the generated) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 552.00 Td
+(video.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 538.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 530.00 Td
+(Question: What is the role of the backend?) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 516.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 508.00 Td
+(Answer: The backend handles speech recognition, ASL gloss generation, clip matching, video) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 494.00 Td
+(stitching, and result delivery.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 480.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 472.00 Td
+(Question: What happens if a word is missing from the dataset?) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 458.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 450.00 Td
+(Answer: The system tries matching, variants, or fingerspelling. If nothing works, that sign) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 436.00 Td
+(may be skipped.) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 422.00 Td
+() Tj
+-56 -8.00 Td
+/F2 14 Tf
+56 414.00 Td
+(20. Short Final Summary) Tj
+-56 -19.00 Td
+/F1 10 Tf
+56 395.00 Td
+() Tj
+-56 -8.00 Td
+/F1 10 Tf
+56 387.00 Td
+(GenASL is a full-stack MVP that converts English speech or text into ASL video. The React) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 373.00 Td
+(frontend collects user input and displays results. The FastAPI backend uses Whisper for) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 359.00 Td
+(speech-to-text, Ollama/LLM for English-to-ASL gloss conversion, ASLLVD video clips for) Tj
+-56 -14.00 Td
+/F1 10 Tf
+56 345.00 Td
+(signs, FFmpeg for stitching, and MediaPipe/OpenCV for skeleton visualization.) Tj
+-56 -14.00 Td
+/F1 8 Tf
+277.50 27.00 Td
+(Page 9) Tj
+ET
+endstream
+endobj
+23 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 22 0 R >>
+endobj
+xref
+0 24
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000176 00000 n 
+0000000246 00000 n 
+0000000321 00000 n 
+0000000389 00000 n 
+0000003453 00000 n 
+0000003599 00000 n 
+0000006823 00000 n 
+0000006969 00000 n 
+0000009961 00000 n 
+0000010109 00000 n 
+0000013305 00000 n 
+0000013453 00000 n 
+0000016532 00000 n 
+0000016680 00000 n 
+0000019745 00000 n 
+0000019893 00000 n 
+0000022825 00000 n 
+0000022973 00000 n 
+0000026642 00000 n 
+0000026790 00000 n 
+0000029805 00000 n 
+trailer
+<< /Size 24 /Root 1 0 R >>
+startxref
+29953
+%%EOF

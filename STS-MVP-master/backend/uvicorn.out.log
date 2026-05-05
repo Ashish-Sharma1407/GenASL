@@ -1,0 +1,77 @@
+INFO:     127.0.0.1:58230 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61711 - "OPTIONS /jobs/generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61711 - "POST /jobs/generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61711 - "GET /jobs/de43424c-1f69-4b49-b7a7-e43d66dd64d4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61711 - "GET /jobs/de43424c-1f69-4b49-b7a7-e43d66dd64d4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61711 - "GET /jobs/de43424c-1f69-4b49-b7a7-e43d66dd64d4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61711 - "GET /jobs/de43424c-1f69-4b49-b7a7-e43d66dd64d4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61711 - "GET /jobs/de43424c-1f69-4b49-b7a7-e43d66dd64d4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61711 - "GET /jobs/de43424c-1f69-4b49-b7a7-e43d66dd64d4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61711 - "GET /jobs/de43424c-1f69-4b49-b7a7-e43d66dd64d4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61711 - "GET /jobs/de43424c-1f69-4b49-b7a7-e43d66dd64d4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61711 - "GET /jobs/de43424c-1f69-4b49-b7a7-e43d66dd64d4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61711 - "GET /jobs/de43424c-1f69-4b49-b7a7-e43d66dd64d4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61711 - "GET /jobs/de43424c-1f69-4b49-b7a7-e43d66dd64d4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61711 - "GET /jobs/de43424c-1f69-4b49-b7a7-e43d66dd64d4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61711 - "GET /jobs/de43424c-1f69-4b49-b7a7-e43d66dd64d4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61711 - "GET /jobs/de43424c-1f69-4b49-b7a7-e43d66dd64d4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61711 - "GET /jobs/de43424c-1f69-4b49-b7a7-e43d66dd64d4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61711 - "GET /jobs/de43424c-1f69-4b49-b7a7-e43d66dd64d4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61711 - "GET /jobs/de43424c-1f69-4b49-b7a7-e43d66dd64d4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61711 - "GET /jobs/de43424c-1f69-4b49-b7a7-e43d66dd64d4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61711 - "GET /jobs/de43424c-1f69-4b49-b7a7-e43d66dd64d4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61711 - "GET /jobs/de43424c-1f69-4b49-b7a7-e43d66dd64d4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61711 - "GET /jobs/de43424c-1f69-4b49-b7a7-e43d66dd64d4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61711 - "GET /jobs/de43424c-1f69-4b49-b7a7-e43d66dd64d4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61711 - "GET /jobs/de43424c-1f69-4b49-b7a7-e43d66dd64d4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61711 - "GET /jobs/de43424c-1f69-4b49-b7a7-e43d66dd64d4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61711 - "GET /jobs/de43424c-1f69-4b49-b7a7-e43d66dd64d4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61711 - "GET /jobs/de43424c-1f69-4b49-b7a7-e43d66dd64d4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61711 - "GET /jobs/de43424c-1f69-4b49-b7a7-e43d66dd64d4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61711 - "GET /jobs/de43424c-1f69-4b49-b7a7-e43d66dd64d4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61711 - "GET /jobs/de43424c-1f69-4b49-b7a7-e43d66dd64d4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61711 - "GET /jobs/de43424c-1f69-4b49-b7a7-e43d66dd64d4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61711 - "GET /jobs/de43424c-1f69-4b49-b7a7-e43d66dd64d4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61711 - "GET /jobs/de43424c-1f69-4b49-b7a7-e43d66dd64d4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61711 - "GET /jobs/de43424c-1f69-4b49-b7a7-e43d66dd64d4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61711 - "GET /jobs/de43424c-1f69-4b49-b7a7-e43d66dd64d4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61711 - "GET /jobs/de43424c-1f69-4b49-b7a7-e43d66dd64d4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63597 - "GET /static/jobs/de43424c-1f69-4b49-b7a7-e43d66dd64d4.mp4 HTTP/1.1" 206 Partial Content
+INFO:     127.0.0.1:57500 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59963 - "OPTIONS /jobs/generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59963 - "POST /jobs/generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59963 - "GET /jobs/43ed28f6-456b-41c3-b0d5-d6217fb7208f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59963 - "GET /jobs/43ed28f6-456b-41c3-b0d5-d6217fb7208f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59963 - "GET /jobs/43ed28f6-456b-41c3-b0d5-d6217fb7208f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58373 - "GET /static/jobs/43ed28f6-456b-41c3-b0d5-d6217fb7208f.mp4 HTTP/1.1" 206 Partial Content
+INFO:     127.0.0.1:64311 - "POST /jobs/generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64311 - "GET /jobs/58ac28c0-80f7-485b-a946-ed358adb6f18 HTTP/1.1" 200 OK
+Saved web-safe skeleton video -> C:\Users\ashis\Downloads\STS-MVP-master\STS-MVP-master\asl_videos\stitched\58ac28c0-80f7-485b-a946-ed358adb6f18_skeleton.mp4
+INFO:     127.0.0.1:64311 - "GET /jobs/58ac28c0-80f7-485b-a946-ed358adb6f18 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64311 - "GET /jobs/58ac28c0-80f7-485b-a946-ed358adb6f18 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49523 - "GET /static/jobs/58ac28c0-80f7-485b-a946-ed358adb6f18.mp4 HTTP/1.1" 206 Partial Content
+INFO:     127.0.0.1:60400 - "GET /static/jobs/58ac28c0-80f7-485b-a946-ed358adb6f18_skeleton.mp4 HTTP/1.1" 206 Partial Content
+INFO:     127.0.0.1:59759 - "POST /jobs/generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59759 - "GET /jobs/f77846ae-e2cf-44a5-85c6-83e22a764dfb HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59759 - "GET /jobs/f77846ae-e2cf-44a5-85c6-83e22a764dfb HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59759 - "GET /jobs/f77846ae-e2cf-44a5-85c6-83e22a764dfb HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59759 - "GET /jobs/f77846ae-e2cf-44a5-85c6-83e22a764dfb HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59759 - "GET /jobs/f77846ae-e2cf-44a5-85c6-83e22a764dfb HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59759 - "GET /jobs/f77846ae-e2cf-44a5-85c6-83e22a764dfb HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59759 - "GET /jobs/f77846ae-e2cf-44a5-85c6-83e22a764dfb HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59759 - "GET /jobs/f77846ae-e2cf-44a5-85c6-83e22a764dfb HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59759 - "GET /jobs/f77846ae-e2cf-44a5-85c6-83e22a764dfb HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59759 - "GET /jobs/f77846ae-e2cf-44a5-85c6-83e22a764dfb HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59759 - "GET /jobs/f77846ae-e2cf-44a5-85c6-83e22a764dfb HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59759 - "GET /jobs/f77846ae-e2cf-44a5-85c6-83e22a764dfb HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59759 - "GET /jobs/f77846ae-e2cf-44a5-85c6-83e22a764dfb HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59759 - "GET /jobs/f77846ae-e2cf-44a5-85c6-83e22a764dfb HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59759 - "GET /jobs/f77846ae-e2cf-44a5-85c6-83e22a764dfb HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59759 - "GET /jobs/f77846ae-e2cf-44a5-85c6-83e22a764dfb HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59759 - "GET /jobs/f77846ae-e2cf-44a5-85c6-83e22a764dfb HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59759 - "GET /jobs/f77846ae-e2cf-44a5-85c6-83e22a764dfb HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59759 - "GET /jobs/f77846ae-e2cf-44a5-85c6-83e22a764dfb HTTP/1.1" 200 OK
+Saved web-safe skeleton video -> C:\Users\ashis\Downloads\STS-MVP-master\STS-MVP-master\asl_videos\stitched\f77846ae-e2cf-44a5-85c6-83e22a764dfb_skeleton.mp4
+INFO:     127.0.0.1:59759 - "GET /jobs/f77846ae-e2cf-44a5-85c6-83e22a764dfb HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59685 - "GET /static/jobs/f77846ae-e2cf-44a5-85c6-83e22a764dfb.mp4 HTTP/1.1" 206 Partial Content
+INFO:     127.0.0.1:63335 - "GET /static/jobs/f77846ae-e2cf-44a5-85c6-83e22a764dfb_skeleton.mp4 HTTP/1.1" 206 Partial Content

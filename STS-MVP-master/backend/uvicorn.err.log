@@ -1,0 +1,22 @@
+INFO:     Started server process [24156]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+Traceback (most recent call last):
+  File "C:\Users\ashis\Downloads\STS-MVP-master\STS-MVP-master\render_skeleton.py", line 183, in <module>
+    render(sys.argv[1], sys.argv[2], sys.argv[3])
+  File "C:\Users\ashis\Downloads\STS-MVP-master\STS-MVP-master\render_skeleton.py", line 176, in render
+    print(f"Saved web-safe skeleton video \u2192 {out_path}")
+  File "C:\Users\ashis\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 30: character maps to <undefined>
+Traceback (most recent call last):
+  File "C:\Users\ashis\Downloads\STS-MVP-master\STS-MVP-master\render_skeleton.py", line 183, in <module>
+    render(sys.argv[1], sys.argv[2], sys.argv[3])
+  File "C:\Users\ashis\Downloads\STS-MVP-master\STS-MVP-master\render_skeleton.py", line 176, in render
+    print(f"Saved web-safe skeleton video \u2192 {out_path}")
+  File "C:\Users\ashis\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 30: character maps to <undefined>

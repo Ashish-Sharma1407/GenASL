@@ -1,0 +1,17 @@
+.venv
+
+asl_videos
+
+asllvd_metadata
+asllvd_raw
+
+backend/.env
+backend/docker
+
+out.mp4
+
+docker-compose.yml
+
+backend/app/__pycache__
+
+node_modules
